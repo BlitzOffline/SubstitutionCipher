@@ -10,13 +10,13 @@ namespace SubstitutionCipher
 
         public Cipher(byte shiftAmount)
         {
-            Debug.Assert(shiftAmount > 0 && shiftAmount < 26, "The shift amount needs to be in the interval [1, 26]");
+            Debug.Assert(shiftAmount > 0 && shiftAmount < 26, "The shift amount needs to be in the interval [1, 25]");
             ShiftAmount = shiftAmount;
         }
 
         public Cipher(byte shiftAmount, bool leftShift)
         {
-            Debug.Assert(shiftAmount > 0 && shiftAmount < 26, "The shift amount needs to be in the interval [1, 26]");
+            Debug.Assert(shiftAmount > 0 && shiftAmount < 26, "The shift amount needs to be in the interval [1, 25]");
             ShiftAmount = shiftAmount;
             LeftShift = leftShift;
         }
